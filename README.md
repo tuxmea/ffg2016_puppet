@@ -1,4 +1,4 @@
-# (Puppet Workshop @ FFG2016)[https://www.guug.de/veranstaltungen/ffg2016/abstracts.html#1_1_2]
+# [Puppet Workshop @ FFG2016](https://www.guug.de/veranstaltungen/ffg2016/abstracts.html#1_1_2)
 
 In diesem Repository befindet sich Puppet Beispiel Code an dem im Rahmen
 des Puppet Workshops auf dem Frühjahrsfachgespräch der GUUG gearbeitet wird.
