@@ -2,6 +2,7 @@
 
 Unterkapitel:
 
-[Tools](Tools.md)
-[Installation](InstallationPuppet3.md)
+## [Tools](Tools.md)
+
+## [Installation](InstallationPuppet3.md)
 
