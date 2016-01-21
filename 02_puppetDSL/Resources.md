@@ -6,7 +6,7 @@
 
 ## Deklarieren:
 
-    # resources.pp
+    # /root/puppet/resources.pp
     group { 'admins':
       ensure => present,
     }
@@ -22,7 +22,7 @@
 
 ## Reihenfolge - Metattribute
 
-    # ssh.pp
+    # /root/puppet/ssh.pp
     package { 'openssh-server':
       ensure => present,
     }
@@ -38,7 +38,7 @@
 
 ## Reihenfolge - Chaining
 
-    # apache.pp
+    # /root/puppet/apache.pp
     package { 'httpd':
       ensure => present,
     }
@@ -51,4 +51,12 @@
     }
     Package['httpd'] -> File['/etc/httpd/conf/httpd.conf'] ~> Service['httpd']
 
+
+## Anwenden
+
+    puppet apply <dateiname>
+
+Beispiel:
+
+    puppet apply /root/puppet/resources.pp
 

@@ -4,15 +4,15 @@
 
 Prüfen OS puppet paket version
 
-EL: yum info puppet
-Debian: apt-cache show puppet
+- EL: yum info puppet
+- Debian: apt-cache show puppet
 
 Wir benötigen Version 3.8.x
 
 ## PuppetLabs repository einbinden:
 
-EL: https://docs.puppetlabs.com/puppet/3.8/reference/install_el.html
-Debian: https://docs.puppetlabs.com/puppet/3.8/reference/install_debian_ubuntu.html
+- EL: https://docs.puppetlabs.com/puppet/3.8/reference/install_el.html
+- Debian: https://docs.puppetlabs.com/puppet/3.8/reference/install_debian_ubuntu.html
 
 ## System Anforderungen
 
@@ -22,6 +22,8 @@ https://docs.puppetlabs.com/puppet/3.8/reference/pre_install.html
 
 Im Workshop wird nur der Agent benötigt!!!!
 
-Wer den PuppetServer gerne in Betrieb nehmen will, muss berücksichtigen, dassdas System auf dem installiert wird mindestens 2 GB RAM zur Verfügung hat.
+Wer den PuppetServer gerne in Betrieb nehmen will, muss berücksichtigen, das sdas System auf dem installiert wird mindestens 2 GB RAM zur Verfügung hat.
 
+- EL: yum install puppet
+- Debian: apt-get install puppet
 
