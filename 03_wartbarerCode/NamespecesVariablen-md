@@ -1,0 +1,57 @@
+# Namespaces und Variablen
+
+## Namespaces (Scopes)
+
+1. Top Scope oder Programm Scope
+
+Alle Facter Variablen, alle Variablen die direkt in der site.pp hinterlegt sind (nicht in der Node Klassifizierung)
+Top Scope Variablen werden mit zwei Doppelpunkten gekennzeichnet:
+
+    # site.pp
+    $puppetversion = '3.8.5'
+
+    # puppet code:
+    class ffg2016_puppet {
+      package { 'puppet':
+        ensure => $::puppetversion,
+      }
+    }
+
+2. Node Scope
+
+Jeder Node eröffnet einen neuen Namensraum. Dieser Namensraum sollte nur für die Zuweisung von Klassen (Rollen) verwendet werden.
+Auf Variablen im Node Scope kann nicht zugegriffen werden.
+
+3. Module Scope
+
+Jedes Modul nutzt den Namen des Moduls als Namespace.
+Die Hauptklasse nutzt dieses Namensraum
+Jede Subklasse in einem Modul erweitert den Namensraum um den Dateinamen der Subklasse (ohne Dateiendung)
+
+    # <modulepfad>/ffg2016_puppet/manifests/init.pp
+    class ffg2016_puppet {
+      $puppetversion = '3.8.5'
+      $report = true
+
+      include ffg2016_puppet::install
+      contain ffg2016_puppet::config
+    }
+
+
+    # <modulepfad>/ffg2016_puppet/manifests/install.pp
+    class ffg2016_puppet::install {
+      package { 'puppet':
+        ensure => $ffg2016_puppet::puppetversion
+    }
+
+
+    # <modulepfad>/ffg2016_puppet/manifests/config.pp
+    class ffg2016_puppet::config {
+      ini_setting { 'reporting':
+        path => '/etc/puppet/puppet.conf',
+        section => 'agent',
+        setting => 'report',
+        value => $ffg2016_puppet::report,
+      }
+    }
+
