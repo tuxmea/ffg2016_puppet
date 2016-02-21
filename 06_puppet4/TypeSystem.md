@@ -62,4 +62,23 @@ Daten Typen kann man bei Parametern (von parametrisierten Klassen) nutzen, oder 
       default: { false }
     }
 
+Man muss jetzt auf die Datentypen achten!
+Man kann keine inkompatiblen Daten Typen miteinander vergleichen:
+
+    if $::operatingsystemmajrelease > 7 {
+      # error !
+      # $::operatingsystemmajrelease = String
+      # 7 = Integer
+    }
+
+Tip: Daten Typen Konvertierung nutzen:
+
+    if $::operatingsystemmajversion + 0 > 7 {
+      # OK
+      # $::operatingsystemmajversion = String
+      # + mathematischer Operator - wandelt String in Numeric um
+      # $::operatingsystemmajversion + 0 = Integer
+      # 7 = Integer
+    }
+
 
