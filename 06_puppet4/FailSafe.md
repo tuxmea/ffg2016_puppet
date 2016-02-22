@@ -1,6 +1,6 @@
 # Fail Safe
 
-Jede OS Ueberprüfung sollte sicherheitshalberein fail als default haben.
+Jede OS Ueberpruefung sollte sicherheitshalber ein fail als default haben.
 
 Ausnahme:
 

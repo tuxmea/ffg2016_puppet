@@ -5,10 +5,10 @@ Bei Puppet geht es immer um Abstraktion.
 Technische Implementierung (provider) werden durch Resourcen abstrahiert.
 Resourcen werden in Klassen und Module abstrahiert.
 
-Wie bereits erwähntbeschreiben Klassen und Module eine technische Komponente.
+Wie bereits erwaehnt beschreiben Klassen und Module eine technische Komponente.
 Hierbei kann man auch fremde Module verwenden (Module Forge, GitHub, ...).
 
-Diese Module müssen an die Infrastrukur angepasst werden. Diese Anpassung wird in profilen vorgenommen:
+Diese Module muessen an die Infrastrukur angepasst werden. Diese Anpassung wird in Profilen vorgenommen:
 
     class profile::phpmyadmin {
       class { '::phpmyadmin':

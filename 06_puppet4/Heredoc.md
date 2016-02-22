@@ -17,7 +17,7 @@ Wenn innerhalb des HEREDOC Dokumentes Variablen ersetzt werden sollen, dann wird
     Und eine zweite Zeile.
     EOF
 
-Ausserdem kann man festlegen, bei welchem Zeichen die Einrückung starten sol. Dies wird durch ein Pipe Zeichen definiert.
+Ausserdem kann man festlegen, bei welchem Zeichen die Einrueckung starten sol. Dies wird durch ein Pipe Zeichen definiert.
 Idealerweise setzt man das Pipe Zeichen an das Ende Tag.
 
     $content = @(EOF)
@@ -25,7 +25,7 @@ Idealerweise setzt man das Pipe Zeichen an das Ende Tag.
         Diese hat zwei Leerzeichen
       | EOF
 
-Zusätzlich kann man Escape Sequenzen nutzen. Die verwendeten Escape Sequenzen muessen bei der Definition des Ende Tags mit angegeben werden:
+Zusaetzlich kann man Escape Sequenzen nutzen. Die verwendeten Escape Sequenzen muessen bei der Definition des Ende Tags mit angegeben werden:
 
     $content = @(EOF\t)
       Diese Zeile beginnt am Anfang

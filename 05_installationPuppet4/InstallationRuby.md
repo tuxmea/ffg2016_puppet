@@ -1,6 +1,6 @@
 # Installation als Ruby Gem
 
-Geht nur für Puppet Agent.
+Geht nur fuer Puppet Agent.
 Puppet Server muss aus den Sourcen gebaut werden (komplex) - Java/Clojure Applikation
 
 Vorbereitung:

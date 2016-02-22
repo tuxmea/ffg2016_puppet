@@ -7,7 +7,7 @@ class example42_ssh::param {
             $pkgname = 'openssh-server'
         }
         default: {
-            fail('Das System wird nicht unterstützt.)
+            fail('Das System wird nicht unterstuetzt.)
         }
     }
 }

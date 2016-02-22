@@ -32,7 +32,7 @@ In Puppet:
 
 ## EPP Header (EPP Parameter)
 
-Bei Verwendung der EPP Funktionen können Parameter uebergeben werden:
+Bei Verwendung der EPP Funktionen koennen Parameter uebergeben werden:
 
      epp(<template>, { 'param1' => 'wert1', 'param2' => ['wert2', 'wert3'] })
 
@@ -46,7 +46,7 @@ Diese Parameter muessen im Template an erster Stelle definiert werden:
     ...
 
 Diese kann man bei generischen Templates einsetzen.
-Generische Templates können so von meheren Modulen verwendet werden.
+Generische Templates koennen so von meheren Modulen verwendet werden.
 Ausserdem muss man Parameter in Templates verwenden, wenn man innerhalb eines selbst definierten Resource Typen ein EPP Tempate verwenden will:
 
     define modul1:test (

@@ -17,7 +17,7 @@ Flache Namenshierarchy
     <modulepath>/lib/puppet/functions/<funktionsname>.rb
     <modulepath>/lib/puppet/functions/<namespace>/<funktionsname>.rb
 
-Funktionen können jetzt Namenraeume nutze(zwingend empfohlen!)
+Funktionen koennen jetzt Namenraeume nutzen (zwingend empfohlen!)
 
     modul1/lib/puppet/functions/modul1/base42.rb
 

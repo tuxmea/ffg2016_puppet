@@ -4,7 +4,7 @@ min. Puppet 3.8
 
 Directory environments
 
-Code in neues Environment überführen
+Code in neues Environment ueberfueren
 
     #environment.conf
     parser = future

@@ -19,7 +19,7 @@ Top Scope Variablen werden mit zwei Doppelpunkten gekennzeichnet:
 
 2. Node Scope
 
-Jeder Node eröffnet einen neuen Namensraum. Dieser Namensraum sollte nur für die Zuweisung von Klassen (Rollen) verwendet werden.
+Jeder Node eroeffnet einen neuen Namensraum. Dieser Namensraum sollte nur fuer die Zuweisung von Klassen (Rollen) verwendet werden.
 Auf Variablen im Node Scope kann nicht zugegriffen werden.
 
 3. Module Scope

@@ -1,6 +1,6 @@
 # Installation mit Paketen
 
-Benötigt unterstüts OS:
+Benoetigt untersuetztes OS:
 
 - Debian/Ubuntu
 - RHEL/CentOS
@@ -19,6 +19,6 @@ neuer Code Pfad: ```/opt/puppetlabs```
 
 neuer Config Pfad: ```/etc/puppetlabs```
 
-ein Paket für OpenSource und Enterpris
+ein Paket fuer OpenSource und Enterprise
 
 

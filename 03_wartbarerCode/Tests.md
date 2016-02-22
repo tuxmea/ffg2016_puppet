@@ -2,9 +2,9 @@
 
 ## Unit Tests
 
-Unit tests will compilea catalog in a sandbox. THe content of the catalog is then compared with the tests
+Unit compilieren einen Katalog in einer Sandbox. Der Inhalt des Kataloges wird dann mit den Tests abgeglichen.
 
-Abhängigkeiten:
+Abhaengigkeiten:
 
 - gcc
 - make
@@ -28,7 +28,7 @@ Ruby Erweiterungen (Gems) installiert man idealerweise in einem neuen Pfad und n
 
     bundle install --path vendor
 
-Danach können die Rake Taks ausgeführt werden:
+Danach koennen die Rake Taks ausgefuehrt werden:
 
     bundle exec rake -T   # Liste alle Rake Tasks
     bundle exec rake spec # Spec Tests
@@ -38,7 +38,7 @@ Danach können die Rake Taks ausgeführt werden:
 
 Beaker integriert Vagrant + ServerSpec
 
-Abhängigkeiten:
+Abhaengigkeiten:
 
 - libxml-dev
 

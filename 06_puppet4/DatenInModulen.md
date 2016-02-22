@@ -1,6 +1,6 @@
 # Daten in Modulen
 
-Das Thema wird "Daten in Modulen" genannt, ist aber gleichlautend für "Daten in Environments"
+Das Thema wird "Daten in Modulen" genannt, ist aber gleichlautend fuer "Daten in Environments"
 Daten in Module richtet sich primaer an Modul Entwickler, Daten in Environments richtet sich an Modul Nutzer.
 
 ## Problembeschreibung
@@ -35,7 +35,7 @@ Puppet wird diese dann automatisch finden:
 
     modul1::pkgname: 'modul-neu'
 
-Innerhalb von Hiera kann man Daen Hierarchien ueber beliebige Facts erzeugen.
+Innerhalb von Hiera kann man Daten Hierarchien ueber beliebige Facts erzeugen.
 So z.B. auch ueber OSFamily
 
     # hiera.yaml
@@ -74,8 +74,8 @@ Diese hiera.yaml Datei muss hiera v4 referenzieren.
         backend: yaml
 
 Nun muss man alle Daten in Hiera in das data Verzeichnis im Modul hinterlegen.
-Die params Klasse kann gelöscht werden.
-Die Vererbung aus der Hauptklasse kann raus, die Default Werte, die sich auf die params Subklasse beziehen können raus.
+Die params Klasse kann geloescht werden.
+Die Vererbung aus der Hauptklasse kann raus, die Default Werte, die sich auf die params Subklasse beziehen koennen raus.
 
     class modul1 (
       $pkgname,
@@ -90,7 +90,7 @@ In dieser Datei wird ein Eintrag hinzugefuegt:
 
     data_provider: 'hiera',
 
-Fuer Eenvironments nutzt man die environment.conf Datei oder man hinterlegt das Data Lookup global in die puppet.conf Datei.)
+Fuer Eenvironments nutzt man die environment.conf Datei oder man hinterlegt das Data Lookup global in die puppet.conf Datei.
 
 Der BSD Nutzer legt einfach seine Daten in sein Environment.
 

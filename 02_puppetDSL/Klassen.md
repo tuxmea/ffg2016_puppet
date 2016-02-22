@@ -4,7 +4,7 @@ Zusammenfassung von Resourcen
 
 Beschreibung einer kleinen technischen Einheit
 
-Beispiele für Module:
+Beispiele fuer Module:
 
 - ntp
 - ssh
@@ -23,7 +23,7 @@ Eigene Module sollten ein Prefix bekommen:
 - team_ops_git
 - team_dev_git
 
-Klassennamen dürfen kein Minuszeichen enthalten !
+Klassennamen duerfen kein Minuszeichen enthalten !
 
 ## Klassen definition
 
@@ -49,5 +49,5 @@ Klassennamen dürfen kein Minuszeichen enthalten !
 
     include example42_ssh
 
-Achtung: damit Klassen auf dem Puppet Server autoamtisch gefunden werden, müssen diese in Modulen hinterlegt werden.
+Achtung: damit Klassen auf dem Puppet Server automatisch gefunden werden, muessen diese in Modulen hinterlegt werden.
 

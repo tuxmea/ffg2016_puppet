@@ -1,13 +1,13 @@
 # Installation Puppet 3
 
-## Sind Pakete verfügbar?
+## Sind Pakete verfuegbar?
 
-Prüfen OS puppet paket version
+Pruefen OS puppet Paket version
 
 - EL: yum info puppet
 - Debian: apt-cache show puppet
 
-Wir benötigen Version 3.8.x
+Wir benoetigen Version 3.8.x
 
 ## PuppetLabs repository einbinden:
 
@@ -20,9 +20,9 @@ https://docs.puppetlabs.com/puppet/3.8/reference/pre_install.html
 
 ## Agent Installation
 
-Im Workshop wird nur der Agent benötigt!!!!
+Im Workshop wird nur der Agent benoetigt!!!!
 
-Wer den PuppetServer gerne in Betrieb nehmen will, muss berücksichtigen, das sdas System auf dem installiert wird mindestens 2 GB RAM zur Verfügung hat.
+Wer den PuppetServer gerne in Betrieb nehmen will, muss berueksichtigen, das sdas System auf dem installiert wird mindestens 2 GB RAM zur Verfuegung hat.
 
 - EL: yum install puppet
 - Debian: apt-get install puppet
