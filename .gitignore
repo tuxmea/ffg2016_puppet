@@ -3,4 +3,4 @@ wordpress
 Gemfile.lock
 log
 .bundle
-spec/fixtures
+**/spec/fixtures
