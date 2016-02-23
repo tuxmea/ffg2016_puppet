@@ -6,11 +6,11 @@ run_puppet_install_helper unless ENV['BEAKER_provision'] == 'no'
 
 RSpec.configure do |c|
     proj_root = File.expand_path(File.join(File.dirname(__FILE__), '..'))
-    c.formatter = :documentatoin
+    c.formatter = :documentation
     c.before :suite do
         puppet_module_install(
             :source => proj_root,
-            :module_name => 'exmaple42_ssh'
+            :module_name => 'example42_ssh'
         )
         hosts.each do |host|
             on host,

@@ -9,7 +9,7 @@ describe 'example42_ssh' do
                 end
                 context 'example42_ssh ohne parameter' do
                     it { is_expected.to compile.with_all_deps }
-                    it { is.expected.to contain_class('exmaple42_ssh::params') }
+                    it { is_expected.to contain_class('example42_ssh::params') }
                 end
             end
         end
@@ -21,7 +21,7 @@ describe 'example42_ssh' do
                 :operatingsystem => 'Nexenta',
                 }
             end
-            it { expect { is_expected.to contain_class('example42_ssh') }.to raise_error(PuppetError, /os nicht unterst/) }
+            it { expect { is_expected.to contain_class('example42_ssh') }.to raise_error(Puppet::Error, /Das System wird nicht unterstuetzt./) }
         end
     end
 end

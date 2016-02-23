@@ -5,7 +5,7 @@ gem 'puppetlabs_spec_helper'
 gem 'rspec-puppet', :git => 'https://github.com/rodjek/rspec-puppet.git'
 
 # optional
-gem 'metatdata-json-lint'
+gem 'metadata-json-lint'
 gem 'rspec-puppet-facts'
 
 gem 'puppet-lint-absolute_classname-check'
@@ -13,7 +13,7 @@ gem 'puppet-lint-leading_zero-check'
 gem 'puppet-lint-trailing_comma-check'
 gem 'puppet-lint-version_comparison-check'
 gem 'puppet-lint-classes_and_types_beginning_with_digits-check'
-gem 'puppet-lint-unquoted_string-check
+gem 'puppet-lint-unquoted_string-check'
 
 # see http://puppet.community/ for more extensions
 
