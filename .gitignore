@@ -3,4 +3,4 @@ wordpress
 Gemfile.lock
 log
 .bundle
-**/spec/fixtures
+03_wartbarerCode/modules/example42_ssh/spec/fixtures/
