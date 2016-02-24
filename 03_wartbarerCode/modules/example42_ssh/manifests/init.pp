@@ -9,11 +9,11 @@ class example42_ssh (
   }
   file { '/etc/ssh/sshd_config':
     ensure  => file,
-    require => Package [$pkgname],
+    require => Package[$pkgname],
   }
   service { $svcname:
     ensure    => running,
     enable    => true,
-    subscribe => File ['/etc/ssh/sshd_config'],
+    subscribe => File['/etc/ssh/sshd_config'],
   }
 }
