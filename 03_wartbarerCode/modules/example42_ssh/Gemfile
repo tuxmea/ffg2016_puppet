@@ -3,6 +3,8 @@ source "https://rubygems.org"
 gem "puppet", ENV['PUPPET_VERSION'] || '~> 3.8'
 gem 'puppetlabs_spec_helper'
 gem 'rspec-puppet', :git => 'https://github.com/rodjek/rspec-puppet.git'
+# ruby 1.8 braucht rspec < 3.2
+# gem 'rspec', '~> 3.1.0'
 
 # optional
 gem 'metadata-json-lint'
