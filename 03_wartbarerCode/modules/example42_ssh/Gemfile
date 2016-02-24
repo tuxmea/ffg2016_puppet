@@ -23,8 +23,8 @@ gem 'puppet-lint-unquoted_string-check'
 ## integration tests
 
 group :system_tests do
-  gem 'beaker'
-  gem 'beaker-rspec'
-  gem 'beaker-puppet_install_helper'
+  gem 'beaker' if RUBY_VERSION >= '1.9'
+  gem 'beaker-rspec' if RUBY_VERSION >= '1.9'
+  gem 'beaker-puppet_install_helper' if RUBY_VERSION >= '1.9'
 end
 
