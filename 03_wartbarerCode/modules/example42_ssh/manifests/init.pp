@@ -8,10 +8,12 @@ class example42_ssh (
     ensure => present,
   }
   file { '/etc/ssh/sshd_config':
-    ensure => file,
+    ensure  => file,
+    require => Package [$pkgname],
   }
   service { $svcname:
-    ensure => running,
-    enable => true,
+    ensure    => running,
+    enable    => true,
+    subscribe => File ['/etc/ssh/sshd_config'],
   }
 }
